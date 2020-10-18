@@ -37,13 +37,16 @@ You will be able to connect to localhost:21 with default user:
 
 You can use a custom user/password and certificate by passing environment variable:
 
-|      Name      |     Default Value      |
-|:--------------:|:----------------------:|
-| FTP_USER       |          user          |
-| FTP_PWD        |        password        |
-| TLS_CN         |          app           |
-| TLS_ORG        |       organization     |
-| TLS_C          |           fr           |
+|      Name                     |     Default Value      |
+|:-----------------------------:|:----------------------:|
+| FTP_USER                      |          user          |
+| FTP_PWD                       |        password        |
+| FTP_PASSIVE_PORT_MIN          |        50000           |
+| FTP_PASSIVE_PORT_MAX          |        50009           |
+| FTP_PWD                       |        password        |
+| TLS_CN                        |          app           |
+| TLS_ORG                       |       organization     |
+| TLS_C                         |           fr           |
 
 ## Build
 

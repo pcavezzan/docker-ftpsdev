@@ -22,6 +22,8 @@ if [ ! -e /etc/proftpd/cert.pem ];then
         -out /etc/proftpd/cert.pem
 fi
 
-echo "PassivePorts 50000 50050" > /etc/proftpd/conf.d/passive_ports.conf
+FTP_PASSIVE_PORT_MIN=${FTP_PASSIVE_PORT_MIN:-50000}
+FTP_PASSIVE_PORT_MAX=${FTP_PASSIVE_PORT_MAX:-50009}
+echo "PassivePorts ${FTP_PASSIVE_PORT_MIN} ${FTP_PASSIVE_PORT_MAX}" > /etc/proftpd/conf.d/passive_ports.conf
 
 exec proftpd --nodaemon
