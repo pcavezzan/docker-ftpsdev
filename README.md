@@ -20,7 +20,7 @@ services:
     image: pcavezzan/ftpsdev:latest
     ports:
     - "21:21"
-    - "50000-50050:50000-50050" 
+    - "50000-50050:50000-50009" 
 ```
 
 then:
