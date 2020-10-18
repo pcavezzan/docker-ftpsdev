@@ -11,6 +11,6 @@ COPY run.sh /run.sh
 
 RUN chmod +x /run.sh
 
-EXPOSE 21 50000-50050
- 
+EXPOSE 21 50000-50009
+
 ENTRYPOINT ["/run.sh"]
